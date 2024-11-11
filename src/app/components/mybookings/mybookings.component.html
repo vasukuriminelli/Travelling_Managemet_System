@@ -1,0 +1,80 @@
+
+<!-- TICKETS BOOKING TABLE LIST OF DATA -->
+ 
+<div style="background-color: aquamarine;">
+<table class="table table-striped table-hover table-bordered">
+  <thead class="thead-dark">
+    <tr>
+      <th>Booking Id</th>
+      <th>From Destination</th>
+      <th>To Destination</th>
+      <th>Price (USD)</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let travel of table">
+      <td>{{ travel.id }}</td>
+      <td>{{ travel.fromDestination }}</td>
+      <td>{{ travel.toDestination }}</td>
+      <td>${{ travel.price }}</td>
+      <td>{{ travel.date }}</td>
+      <td><button type="button" class="btn btn-danger" (click)="ondelete(travel.id)" >Delete this booking</button></td>
+    </tr>
+  </tbody>
+   
+</table>
+</div>
+
+
+
+<!-- UPDATION BUTTON CODE -->
+<div class="mb-3">
+  <div class="">
+    <div class="row">
+      <div class="offset-md-4 col-md-4">
+         <button type="button" class="btn btn-danger " data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Update this booking
+         </button>
+        </div>
+        </div>
+</div>
+</div>
+
+<!-- POPUP-UPDATION FROM -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" *ngIf="remo">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content shadow-lg border-0"> <!-- Removed border and added shadow for elegance -->
+      <div class="modal-header bg-dark text-white"> <!-- Darker header for a more sophisticated look -->
+        <h5 class="modal-title" id="exampleModalLabel">Update Booking Details</h5>
+      
+      </div>
+      <div class="modal-body p-4">
+        <form [formGroup]="registrationForm" (ngSubmit)="updatedetails(registrationForm.value)">
+          <div class="row g-3"> <!-- Added `g-3` for consistent gutter spacing between form elements -->
+            <div class="col-md-12">
+              <label for="id" class="form-label">ID:</label>
+              <input id="id" type="text" formControlName="id" class="form-control rounded-3" required />
+            </div>
+          </div>
+          <div class="row g-3 mt-3"> <!-- Added margin-top for spacing -->
+            <div class="col-md-6">
+              <label for="fromDestination" class="form-label">From Destination:</label>
+              <input id="fromDestination" type="text" formControlName="fromDestination" class="form-control rounded-3" required />
+            </div>
+            <div class="col-md-6">
+              <label for="toDestination" class="form-label">To Destination:</label>
+              <input id="toDestination" type="text" formControlName="toDestination" class="form-control rounded-3" required />
+            </div>
+          </div>
+          <div class="modal-footer mt-4 bg-light border-0"> <!-- Removed border and added spacing -->
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button> <!-- Outline button for subtlety -->
+            <button type="submit" class="btn btn-primary px-4">Save Changes</button> <!-- Made the primary button more prominent -->
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+

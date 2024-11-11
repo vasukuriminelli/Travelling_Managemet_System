@@ -1,0 +1,109 @@
+/* General Footer Styles */
+footer {
+    background-color: #000; /* Black background */
+    padding: 40px 0;
+    color: #fff; /* White text */
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .col {
+    flex: 1;
+    margin: 0 15px;
+  }
+  
+  h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #f8f9fa; /* Light gray heading */
+  }
+  
+  p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0 0 10px;
+    color: #f8f9fa; /* Light gray text */
+  }
+  
+  /* Footer Links */
+  .footer-links {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin: 5px 0;
+  }
+  
+  .footer-links a {
+    color: #007bff; /* Blue links for contrast */
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Social Media Icons */
+  .social-media {
+    margin: 20px 0;
+  }
+  
+  .social-media a {
+    color: #007bff;
+    font-size: 18px;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .social-media a:hover {
+    color: #0056b3;
+  }
+  
+  /* Divider */
+  hr {
+    border: none;
+    border-top: 1px solid #444; /* Dark gray divider */
+    margin: 20px 0;
+  }
+  
+  /* Copyright Info */
+  footer p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  footer a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .row {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .col {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  }
+  

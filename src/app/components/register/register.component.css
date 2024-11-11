@@ -1,0 +1,152 @@
+/* .form-container {
+    background-color: #e9981f;
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    margin:auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-weight: bold;
+    color: #444;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #5df170;
+    margin-top: 5px;
+  }
+  
+  input:focus, select:focus {
+    border-color: #007BFF;
+    outline: none;
+  }
+  
+  small {
+    color: red;
+  }
+  
+  button.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: rgb(117, 236, 25);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button.submit-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+   */
+
+   /* background-image: url('https://img.freepik.com/premium-photo/blue-wall-with-white-arrow-pointing-right_1034303-244337.jpg?ga=GA1.2.2013731574.1674796066&semt=ais_hybrid');
+     */
+/* Background and centering wrapper */
+.background-wrapper {
+  background-image: url('https://img.freepik.com/premium-photo/blue-wall-with-white-arrow-pointing-right_1034303-244337.jpg?ga=GA1.2.2013731574.1674796066&semt=ais_hybrid');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 110vh;
+  width: 100vw;
+  position: relative;
+}
+
+/* Form container styling */
+.form-container {
+  background: rgba(255, 255, 255, 0.9); /* Light background with slight transparency */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for better visibility */
+  max-width: 400px; /* Ensures the form does not exceed a reasonable width */
+  height: 730px; /* Fixed height for the form container */
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Form header */
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Input group styling */
+.input-group {
+  margin-bottom: 10px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input:focus, select:focus {
+  border-color: #66afe9;
+  outline: none;
+  box-shadow: 0 0 5px rgba(102, 175, 233, 0.5);
+}
+
+/* Button styling */
+button.submit-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button.submit-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button.submit-btn:hover:not(:disabled) {
+  background-color: #218838;
+}
+
+.btn-danger {
+  width: 100%;
+  padding: 10px;
+  background-color: #ef5350;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+}

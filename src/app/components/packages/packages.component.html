@@ -1,0 +1,16 @@
+
+
+<div class="packages-page">
+  <h1 class="page-title">Travel Packages</h1>
+
+  <div class="package-card" *ngFor="let package of travelPackages">
+    <img [src]="package.imageUrl" alt="{{ package.destination }}" class="package-image"/>
+    <div class="package-details">
+      <h2>{{ package.destination }}</h2>
+      <p>{{ package.description }}</p>
+      <div class="package-price">
+        <strong>Price: ${{ package.price }}</strong>
+      </div>
+    </div>
+  </div>
+</div>

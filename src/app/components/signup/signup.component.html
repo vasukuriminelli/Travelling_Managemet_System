@@ -1,0 +1,38 @@
+
+ 
+
+<body>
+    <div class="registration_form">
+        <form [formGroup]="registerForm2" (ngSubmit)="postData()">
+            <div class="form-header">
+                <h3>Sign Up</h3>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" formControlName="email" placeholder="Enter your email"
+                    [class.is-invalid]="email.touched && email.invalid ">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" formControlName="password" placeholder="Enter your password"
+                    [class.is-invalid]="password.touched && password.invalid ">
+            </div>
+
+            <!-- <div class="form-group">
+                <input type="password" class="form-control" formControlName="repeatpassword"
+                    placeholder="Repeat your password" [class.is-invalid]="repeatpassword.touched && repeatpassword.invalid ">
+            </div> -->
+            
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck">
+                <label class="form-check-label" for="disabledFieldsetCheck">Remember Me</label>
+            </div>
+            <div class="form-info">
+                <p>By creating an account you agree to our <a href="#">Terms & Privacy</a></p>
+                <p>If you already have an account <a href="/login"><b>Login</b></a></p>
+            </div>
+            <div class="form-buttons">
+                <button class="btn btn-reset" type="reset" value="reset">Cancel</button>
+                <button class="btn btn-submit">SignUp</button>
+            </div>
+        </form>
+    </div>
+</body>

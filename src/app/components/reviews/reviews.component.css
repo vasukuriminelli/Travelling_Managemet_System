@@ -1,0 +1,61 @@
+.reviews-page {
+    background-color: #010d0f; /* Light aquamarine background */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .page-title {
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(189, 126, 63); /* Orange color for the title */
+    margin-bottom: 40px;
+  }
+  
+  .review-card {
+    display: flex;
+    align-items: flex-start;
+    background-color: #ffffff; /* White background for cards */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .review-content {
+    display: flex;
+    flex: 1;
+    align-items: center;
+  }
+  
+  .celebrity-image {
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .review-text {
+    max-width: 500px;
+  }
+  
+  .review-text h2 {
+    font-size: 1.5rem;
+    color: #090288; /* Orange color for the names */
+    margin-bottom: 10px;
+  }
+  
+  .review-text p {
+    font-size: 1rem;
+    color: #333; /* Dark color for text */
+  }
+  
+  .vacation-image {
+    margin-left: 20px;
+  }
+  
+  .vacation-image img {
+    border-radius: 8px;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+  }
+  

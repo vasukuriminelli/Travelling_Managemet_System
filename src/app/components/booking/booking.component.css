@@ -1,0 +1,130 @@
+/* General page styling */
+html, body {
+  height: 100%; /* Ensure the background covers the entire viewport */
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #ececec, #498b96); /* Light blue gradient for a refreshing, professional feel */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+}
+
+/* Background wrapper to center the form and apply background */
+.background-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px; /* Padding around the form for spacing from edges */
+  box-sizing: border-box;
+}
+
+/* Form container styling */
+.registration_form {
+  background-color: #ffffff; /* White background for the form */
+  border-radius: 10px; /* Rounded corners for modern look */
+  padding: 40px;
+  box-shadow: none; /* Remove the shadow */
+  width: 100%;
+  max-width: 400px;
+  margin: 20px; /* Margin to ensure it doesn't exceed the background */
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.registration_form:hover {
+  background-color: #f7f7f7; /* Subtle change on hover */
+  transform: scale(1.02); /* Slight scaling for an interactive feel */
+}
+
+/* Header styling */
+.form-header h3 {
+  color: #333; /* Darker gray for a clean contrast */
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+/* Input field styling */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px; /* Softer, rounded corners */
+  font-size: 1rem;
+  background-color: #f9f9f9; /* Light gray input background */
+}
+
+.form-control:focus {
+  border-color: #42a5f5; /* Blue focus color */
+  outline: none;
+  box-shadow: 0 0 8px rgba(66, 165, 245, 0.3); /* Blue focus effect */
+}
+
+/* Checkbox styling */
+.form-check-input {
+  margin-right: 10px;
+}
+
+.form-check-label {
+  font-size: 0.9rem;
+  color: #666; /* Muted gray for readability */
+}
+
+/* Form info section styling */
+.form-info {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 20px;
+}
+
+.form-info a {
+  color: #42a5f5; /* Blue links */
+  text-decoration: none;
+}
+
+.form-info a:hover {
+  text-decoration: underline;
+}
+
+/* Button styling */
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-reset {
+  background-color: #ef5350; /* Light red for cancel button */
+  color: #fff;
+}
+
+.btn-reset:hover {
+  background-color: #e53935; /* Darker red on hover */
+}
+
+.btn-submit {
+  background-color: #42a5f5; /* Blue for submit */
+  color: #fff;
+}
+
+.btn-submit:hover {
+  background-color: #1e88e5; /* Darker blue on hover */
+}

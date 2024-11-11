@@ -1,0 +1,133 @@
+/* General Table Styling */
+table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+    background-color: #f8f9fa; /* Light background for the table */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 10px;
+    overflow: hidden; /* Ensures rounded corners on borders */
+  }
+  
+  /* Table Header */
+  thead {
+    background-color: #007bff; /* Primary color for the header */
+    color: white; /* White text for contrast */
+  }
+  
+  thead th {
+    padding: 15px;
+    font-size: 16px;
+    text-transform: uppercase; /* Makes the text uppercase */
+    letter-spacing: 1px; /* Adds spacing between letters */
+    text-align: center;
+  }
+  
+  /* Table Body Rows */
+  tbody tr {
+    transition: background-color 0.3s ease;
+  }
+  
+  tbody tr:nth-child(odd) {
+    background-color: #f2f2f2; /* Light gray for odd rows */
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #ffffff; /* White for even rows */
+  }
+  
+  tbody tr:hover {
+    background-color: #e9ecef; /* Subtle hover effect */
+  }
+  
+  /* Table Data */
+  td {
+    padding: 12px 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #343a40; /* Dark color for text */
+    border-bottom: 1px solid #ddd; /* Light bottom border */
+  }
+  
+  /* First Column (Index) */
+  td:first-child {
+    font-weight: bold;
+    color: #007bff; /* Same color as the header */
+  }
+  
+  /* Price Column */
+  td:nth-child(3) {
+    color: #28a745; /* Green color for price */
+    font-weight: bold;
+  }
+  
+  /* Difficulty Level Styling */
+  td:nth-child(4) {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  td:nth-child(4):before {
+    content: '\25CF'; /* Adds a colored bullet before text */
+    margin-right: 8px;
+    font-size: 18px;
+  }
+  
+  td:nth-child(4)[data-difficulty="Easy"]:before {
+    color: #28a745; /* Green for Easy */
+  }
+  
+  td:nth-child(4)[data-difficulty="Moderate"]:before {
+    color: #ffc107; /* Yellow for Moderate */
+  }
+  
+  td:nth-child(4)[data-difficulty="Hard"]:before {
+    color: #dc3545; /* Red for Hard */
+  }
+  
+  /* Table Footer */
+  tfoot {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  tfoot td {
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #c27802;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input {
+    height: 40px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+  

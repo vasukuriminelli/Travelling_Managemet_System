@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Sofadi+One&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background Image with Text and Button</title>
+  <style>
+      
+    .image-container {
+      position: relative; 
+      height: 100vh;  
+      width: 100vw;  
+      background-image: url('/assets/images/bgimage.jpg');
+      background-size: cover;  
+      background-position: center;  
+      background-repeat: no-repeat;  
+      text-align: center;  
+      color: white;  
+      font-family: Arial, sans-serif;
+    }
+
+   
+    .image-text {
+      position: absolute;
+      top: 40%; 
+      left: 350px;
+      transform: translate(-50%, -50%);
+      font-size: 3rem;
+      font-weight: bold;
+      color: black;
+      font-family: "Fascinate Inline";
+    }
+
+    
+    .image-button {
+      position: absolute;
+      top: 55%;  
+      left: 350px;
+      transform: translate(-50%, -50%);
+      background-color: #ff5722;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.5rem;
+      cursor: pointer;
+      border-radius: 8px;
+    }
+
+   
+    .image-button:hover {
+      background-color: #e64a19;  
+    }
+
+
+
+    /* FLIGHT ANIMATION PURPOSE CODE */
+    .div1 {
+  width: 280px;
+  height: 100px;
+  background-image: url('/assets/images/A-1.png');
+  position: relative;
+  animation-name: flight-diagonal-up;
+  animation-duration: 8s;
+  animation-delay: 2s;
+  animation-iteration-count: 3;
+}
+
+@keyframes flight-diagonal-up {
+  0% {
+    left: 0px;
+    top: 100vh; /* Starts from the bottom */
+  }
+  25% {
+    left: 300px;
+    top: 75vh;
+  }
+  50% {
+    left: 600px;
+    top: 50vh;
+  }
+  75% {
+    left: 900px;
+    top: 25vh;
+  }
+  100% {
+    left: 100vw;
+    top: 0px; /* Ends at the top */
+  }
+}
+
+   
+
+
+  </style>
+</head>
+<body>
+
+  <div class="image-container">
+   
+    <div class="image-text"><h1>Explore the World</h1>
+                            <h2>Check out our packages</h2>
+                            <h3>Designed by experts</h3>
+    </div>
+
+
+     <!-- FLIGHT ANIMATION PURPOSE CODE  -->
+    <div class="div1"></div>
+    
+    
+    <a routerLink="/packages"><button class="image-button" >View Packages</button></a>
+  </div>
+
+  
+</body>
+</html>
+
+    
+   
+
+

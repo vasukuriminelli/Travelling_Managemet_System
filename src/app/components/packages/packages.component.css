@@ -1,0 +1,54 @@
+.packages-page {
+    background-color:#06141b; /* Light aquamarine background */
+    padding: 40px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .page-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: rgb(189, 126, 63); /* Orange color for title */
+    margin-bottom: 40px;
+  }
+  
+  .package-card {
+    display: flex;
+    background-color: #ffffff; /* White background for the card */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 30px;
+    overflow: hidden;
+  }
+  
+  .package-image {
+    width: 300px;
+    height: 200px;
+    border-radius: 30px;
+    object-fit: cover;
+  }
+  
+  .package-details {
+    padding: 20px;
+    flex-grow: 1;
+  }
+  
+  .package-details h2 {
+    font-size: 1.8rem;
+    color: #007bff; /* Blue color for destination names */
+    margin-bottom: 10px;
+  }
+  
+  .package-details p {
+    font-size: 1.1rem;
+    color: #333; /* Dark color for description */
+    margin-bottom: 20px;
+    line-height: 1.6; /* Better readability for longer descriptions */
+  }
+  
+  .package-price {
+    font-size: 1.2rem;
+    color: #ff6f00; /* Orange color for price */
+    margin-bottom: 20px;
+  }
+  
+  

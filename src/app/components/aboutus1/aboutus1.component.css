@@ -1,0 +1,105 @@
+.about-us-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .hero-section {
+    text-align: center;
+    padding: 40px 0;
+    /* background-color: #f0f8ff; */
+  }
+  
+  .hero-section img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .our-mission {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+  }
+  
+  .our-mission .content {
+    width: 50%;
+  }
+  
+  .our-mission img {
+    width: 45%;
+    border-radius: 10px;
+  }
+  
+  .why-choose-us {
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .feature-item {
+    text-align: center;
+  }
+  
+  .feature-item img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .our-values {
+    padding: 40px 0;
+  }
+  
+  .our-values ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .our-values li {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+  
+  .our-team {
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  .team-members {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .team-member {
+    text-align: center;
+  }
+  
+  .team-member img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .testimonials {
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  .testimonials blockquote {
+    font-style: italic;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f8ff;
+    border-left: 5px solid #008080;
+  }
+  
+  .testimonials cite {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  

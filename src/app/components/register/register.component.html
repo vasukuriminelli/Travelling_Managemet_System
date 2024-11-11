@@ -1,0 +1,71 @@
+
+<div class="background-wrapper">
+  <div class="form-container">
+    <h2>Registration Form</h2>
+    <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+      <div class="input-group">
+        <label for="first-name">First Name</label>
+        <input id="first-name" formControlName="fName" type="text">
+        <div *ngIf="registrationForm.get('fName')?.invalid && registrationForm.get('fName')?.touched">
+          <small>First name is required and should be at least 2 characters long.</small>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <label for="last-name">Last Name</label>
+        <input id="last-name" formControlName="lName" type="text">
+        <div *ngIf="registrationForm.get('lName')?.invalid && registrationForm.get('lName')?.touched">
+          <small>Last name is required and should be at least 2 characters long.</small>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input id="email" formControlName="email" type="email">
+        <div *ngIf="registrationForm.get('email')?.invalid && registrationForm.get('email')?.touched">
+          <small>Please enter a valid email.</small>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <label for="phone">Phone</label>
+        <input id="phone" formControlName="phone" type="tel">
+        <div *ngIf="registrationForm.get('phone')?.invalid && registrationForm.get('phone')?.touched">
+          <small>Please enter a valid phone number.</small>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input id="password" formControlName="password" type="password">
+        <div *ngIf="registrationForm.get('password')?.invalid && registrationForm.get('password')?.touched">
+          <small>Password must be at least 6 characters long.</small>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <label for="confirm-password">Confirm Password</label>
+        <input id="confirm-password" formControlName="cPass" type="password">
+        <div *ngIf="registrationForm.get('confirmPassword')?.invalid && registrationForm.get('confirmPassword')?.touched">
+          <small>Confirm your password.</small>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <label for="gender">Gender</label>
+        <select id="gender" formControlName="gender">
+          <option value="" disabled selected>Select your gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+        <div *ngIf="registrationForm.get('gender')?.invalid && registrationForm.get('gender')?.touched">
+          <small>Please select your gender.</small>
+        </div>
+      </div>
+
+      <button type="submit" [disabled]="registrationForm.invalid" class="submit-btn">Register</button>
+    </form>
+  </div>
+</div>
+
